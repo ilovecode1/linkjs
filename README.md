@@ -2,6 +2,14 @@
 
 It takes links link http://cosmicsearch.org and turns it to a link.
 
+#Docs
+
+```
+linkjs.do(string)
+linkjs.Version
+linkjs.Author
+```
+
 # Demos
 
 ##Simple
