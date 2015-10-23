@@ -2,6 +2,10 @@
 
 It takes links link http://cosmicsearch.org and turns it to a link.
 
+#New Site
+
+http://ilovecode1.github.io/linkjs
+
 #Docs
 
 ```
