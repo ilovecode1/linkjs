@@ -1,39 +1,27 @@
-#What is link.js?
+# Link.js v2
 
-It takes links link http://cosmicsearch.org and turns it to a link.
+Turns text links into clickable HTML links. It even ignores normal text and works for most link formats.
 
-#New Site
+For example:
 
-http://getlink.js.org/
+`console.log(Link("Test https://google.com").out());`
 
-<a href="https://js.org" target="_blank" title="JS.ORG | JavaScript Community">
-<img src="https://logo.js.org/dark_horz.png" width="102" alt="JS.ORG Logo"/></a>
-<!-- alternatives [bright|dark]_[horz|vert|tiny].png (width[horz:102,vert:50,tiny:77]) -->
+# Usage
 
-#Docs
+`Link("Input Text")`
 
-```
-linkjs.do(string)
-linkjs.Version
-linkjs.Author
-```
+`.out()`
 
-# Demos
+`.setTo("Element")`
 
-##Simple
+# Usage Examples
 
-```
-var linkjsdemo = linkjs.do("this is some text a link is here http://cosmicsearch.org I want to email so email@cosmicsearch.org lets trick it up and add a period http://cosmicsearch.org.");
-```
+### Turning a text link into a link tag.
 
-##The DOM
+`Link("https://google.com").out();`
 
-```
-document.write(linkjs.do("this is some text a link is here http://cosmicsearch.org I want to email so email@cosmicsearch.org lets trick it up and add a period http://cosmicsearch.org."));
-```
+Output: `<a href="https://google.com" target="_blank">https://google.com</a>`
 
-##Alert
-```
-var linkjsdemo = linkjs.do("this is some text a link is here http://cosmicsearch.org I want to email so email@cosmicsearch.org lets trick it up and add a period http://cosmicsearch.org.");
-alert(linkjsdemo)
-```
+### Turning text links from the body tag into link tags then replacing them.
+
+`Link(document.getElementsByTagName("body")[0].innerHTML).setTo("body");`
