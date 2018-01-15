@@ -1,4 +1,6 @@
 #What is link.js?
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Filovecode1%2Flinkjs.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Filovecode1%2Flinkjs?ref=badge_shield)
+
 
 It takes links link http://cosmicsearch.org and turns it to a link.
 
@@ -37,3 +39,7 @@ document.write(linkjs.do("this is some text a link is here http://cosmicsearch.o
 var linkjsdemo = linkjs.do("this is some text a link is here http://cosmicsearch.org I want to email so email@cosmicsearch.org lets trick it up and add a period http://cosmicsearch.org.");
 alert(linkjsdemo)
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Filovecode1%2Flinkjs.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Filovecode1%2Flinkjs?ref=badge_large)
